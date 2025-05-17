@@ -1,0 +1,109 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1b1a1a;
+  color: #333;
+  overflow-x: hidden;
+
+}
+  
+.home-navbar {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.home-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
+
+.home-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.home-hero {
+  height: 80vh;
+  background: linear-gradient(135deg, #84fab0, #8fd3f4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  padding: 0.7rem 1.5rem;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #333;
+}
+
+.home-footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .home-nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}

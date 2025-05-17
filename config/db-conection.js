@@ -1,13 +1,17 @@
 const mongoose = require("mongoose");
+const config = require("config");
+const debuger = require("debug")("development: mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/backendproject")
+
+mongoose
+.connect(`${config.get("MONGODB_URI")}/backendproject`)
 .then(function(){
-    console.log("db connected");
+    debuger("db connected");
     
 })
 .catch(function(err){
-    console.log(err);
+    debuger(err);
     
 })
 
-module.exports = mongoose.connection;
+module.exports = mongoose.connection; 
