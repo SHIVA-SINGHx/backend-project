@@ -35,6 +35,7 @@ app.get("/", (req, res)=>{
     res.render("home")
 })
 
+
 app.use("/admin", adminRouter);
 app.use("/user", userRouter);
 app.use("/products", productsRouter);
