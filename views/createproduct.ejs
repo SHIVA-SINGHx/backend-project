@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Product</title>
+  <link rel="stylesheet" href="../stylesheet/admin.css">
+</head>
+<body class="admin-body">
+
+  <div class="admin-container">
+    <h1 class="admin-title">Create New Product</h1>
+
+    <form class="product-form" action="/admin/create-product" method="POST" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <label class="form-label">Product Name:</label>
+        <input type="text" name="name" class="form-input" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Description:</label>
+        <textarea name="description" class="form-textarea" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Price (₹):</label>
+        <input type="number" name="price" class="form-input" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Discount (%):</label>
+        <input type="number" name="discount" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Admin Email:</label>
+        <input type="email" name="adminEmail" class="form-input" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Product Image:</label>
+        <input type="file" name="image" class="form-file" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Add Product</button>
+    </form>
+  </div>
+
+</body>
+</html>
